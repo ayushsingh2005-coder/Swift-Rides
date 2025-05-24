@@ -185,3 +185,91 @@ body {
 .submit-btn:hover {
   background-color: #00adb8;
 }
+
+/* Mobile devices (portrait, ≤600px) */
+@media (max-width: 600px) {
+  .offer-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .input .submit-btn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .seat-control, .gender-options, .halt-point-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sec3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sec2 input {
+    width: 100%;
+  }
+
+  .sec1 span {
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Tablets (landscape and portrait, 601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .offer-container {
+    padding: 40px;
+    max-width: 95%;
+  }
+
+  .sec3 {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .input, .submit-btn {
+    font-size: 1rem;
+  }
+}
+
+/* Small desktops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .offer-container {
+    padding: 60px;
+    max-width: 90%;
+  }
+
+  .sec3 {
+    gap: 15px;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 14px;
+  }
+}
+
+/* Large screens (≥1025px) */
+@media (min-width: 1025px) {
+  .offer-container {
+    max-width: 80%;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}
