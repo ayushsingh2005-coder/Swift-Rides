@@ -1,0 +1,899 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ----- scrollbar -------------- */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00bcd4; 
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #008c9e;
+}
+/* --- scrollbar ending -------- */
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #00bcd4 #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+}
+
+.header{
+  position: fixed;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: #ffffff;
+  text-align: center;
+  z-index: 1000;   
+ 
+}
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.sec1{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 4rem;
+  width: 15rem;
+
+}
+
+.sec1 span{
+      color: hsl(0, 0%, 0%);
+      display: flex;
+      font-size: large;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-shadow:1px 1px 1px #090909,0 0 1em #feffff,0 0 0.2em rgba(255, 253, 253, 0)
+}
+.sec1 span p{
+  color: #00adb8;
+  text-shadow:1px 1px 1px #1ea2ae,0 0 1em #feffff,0 0 0.2em rgba(255, 253, 253, 0)
+}
+
+.sec2{
+      height: 2.5rem;
+      width: 20rem;
+      border-radius:3px;
+      border: 2px solid rgb(195, 190, 190);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    
+}
+.sec2:hover{
+    border: 1px solid #000000;
+    box-shadow: 0 0 2px rgb(32, 34, 34);
+    transition: 0.05s ease-out;
+}
+.sec2 input{
+     height: 2rem;
+     width: 11rem;
+     border:none;
+     color: black;
+     flex: 0.7;
+     font-weight: 400;
+     outline: none;
+     text-align:center;
+     font-size:medium;
+     font-weight:400;
+}
+
+
+.sec3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  width: 34rem;
+  
+}
+.sec3 a{
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  text-decoration: none;
+  font-size:medium;
+  color:hsl(0, 0%, 0%);
+  font-weight: 400;
+  text-shadow: 0 0 0.6px hsl(0, 0%, 0%);
+
+}
+
+.sec3 a:hover{
+  color:#00bcd4;
+  transition: 0.1s ease-out;
+  text-shadow: 0 0 1px #00bcd4;
+}
+
+.sec3 button{
+   text-align: center;
+    height: 2.4rem;
+    width:auto;
+    padding: 0 1rem;
+    font-weight: 400;
+    font-size: medium;
+    border: none;
+    background-color:#00adb8;
+    border-radius:3px;
+}
+.sec3 button:hover{
+  background-color:#00adb8;
+}
+.sec3 button a{
+ text-align: center;
+ text-decoration: none;
+  color: #000000;
+ font-weight: 400;
+}
+.sec3 button a:hover{
+  color: #ffffff;
+  transition: 0.13s ease-out;
+}
+
+
+
+
+/*--------------------- HEADER.JSX CSS ENDED HERE ------------------------------- */
+
+/* Hero section  */
+
+.hero-section {
+  height: 35rem;
+  background-color: #f1f8f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-section p {
+  color: #00adb8;
+}
+
+.hs1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 70rem;
+  text-shadow: 0px 1px 1px #00adb8;
+}
+
+.hs2 {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  padding: 1px;
+}
+
+.hs2 p {
+  font-size: large;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 1px 1px #000000;
+}
+
+/* Removed .hs3 styles */
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-buttons button{
+  color: #ffffff;
+  background-color: #00adb8;
+  font-size: 1rem;
+  height: 2.7rem;
+  padding: 6px 24px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #2e3536;
+  transition: background-color 0.3s ease;
+}
+.hero-buttons button a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight:500;
+  font-size: medium;
+}
+
+.hero-buttons button:hover {
+  background-color: #0b6773;
+  cursor: pointer;
+}
+
+.hs4 {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+
+
+/* ---------- hero section ended here--------------- */
+
+/* pre booking section as FindYourride   */
+
+
+.prebooking-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 8px;
+  background: #E8f8f8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.prebooking-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.prebooking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.prebooking-form label {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.prebooking-form input,
+.prebooking-form select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1.8px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.prebooking-form input:focus,
+.prebooking-form select:focus {
+  border-color:#007b80;
+  outline: none;
+}
+
+.prebooking-form button {
+  padding: 12px;
+  background-color:#008c9e;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.prebooking-form button:hover {
+  background-color: #00bcd4;
+}
+
+.booking-summary {
+  margin-top: 30px;
+  background: #ecf0f1;
+  padding: 15px;
+  border-radius: 6px;
+  color: #2c3e50;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.booking-summary h3 {
+  margin-bottom: 12px;
+}
+
+
+
+/* ------------------------------- */
+
+
+/* ------ HowitWorks.jsx starting here ------------ */
+
+.how-it-works {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.hiw-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hiw-subheading {
+  font-size:large;
+  color: #00adb8;
+  margin-bottom: 2rem;
+}
+
+.hiw-steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.hiw-step {
+  flex: 1;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.hiw-icon {
+  background-color: #c6f8fa;
+  color: #00adb8;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px #9aa6a7;
+}
+
+.hiw-step h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hiw-step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.hiw-safe {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hiw-safe-icon {
+  margin-bottom: 1rem;
+}
+
+.hiw-safe h4{
+  font-size:1.2rem;
+}
+
+/* ----------- HowitWorks.jsx  ended here ----- */
+
+/* --- PopoularRoutes.jsx starts here  ------- */
+
+.popular-routes-section {
+  padding: 40px 20px;
+  max-width: 100%;
+  margin: auto;
+  background-color: #f1f8f9;
+}
+
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.popular-header h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.popular-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.view-all-btn {
+  padding: 10px 16px;
+  border: 1px solid #00adb8;
+  background-color: white;
+  color: #00adb8;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.view-all-btn:hover {
+  background-color: #f0f8ff;
+}
+
+.routes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.route-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.route-card-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+}
+
+.route-locations {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #333;
+}
+
+.icon-red {
+  color: red;
+  margin-right: 6px;
+}
+
+.icon-blue {
+  color: #00adb8;
+  margin-right: 6px;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 10px;
+  background-color: #ccc;
+  margin: 0 18px;
+  align-self: center;
+}
+
+.driver-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.driver-info p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.driver-info span {
+  font-size: 14px;
+  color: #f5b301;
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  margin-right: 4px;
+}
+
+.seats-info {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.book-btn {
+  background-color: #00adb8;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: #01212e;
+}
+
+/* ----- Popular.jsx ended here -----*/ 
+
+
+/* ---- -- Hero2.jsx & Footer.jsx starts here ----- */
+
+/* ---Hero2.jsx section starts here  */
+
+
+/* Main container with shadow on top and bottom */
+.Next-journey {
+  height: 32rem;
+  background-color: #00adb8;
+  padding: 4rem 0;
+  box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.Nj1 {
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Nj-heading {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 3px black;
+  margin: 0;
+}
+
+.Nj-paragraph {
+  font-size: 1.2rem;
+  color: #bcf1ef;
+  text-shadow: 0 0 3px black;
+  margin: 0;
+}
+
+.Nj-logos-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+/* Card Styling */
+.Nj-logo1 {
+  background-color: #e0f7fa;
+  color: #007b80;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1.2rem;
+  width: 18rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.Nj-logo1:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.Nj-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #007b80;
+}
+
+.Nj-logo1 h4 {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.Nj-logo1 p {
+  margin: 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* -------  footer section starts here  */
+.footer {
+  background-color:#ffffff03;
+  color: #333;
+  padding: 40px 60px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  border-bottom: 1px solid #05e0f4;
+  padding-bottom: 30px;
+ 
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  /* border: 1px solid; */
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #00b4cc;
+}
+
+.footer-column.brand .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.logo-icon {
+  margin-right: 8px;
+  font-size: 1.5rem;
+  color: #00b4cc;
+}
+
+.highlight {
+  color: #00b4cc;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+
+
+
+/* ------------------ Responsive Styles ------------------ */
+
+@media screen and (max-width: 1200px) {
+  .sec3 {
+    width: 30rem;
+  }
+  
+  .find {
+    flex-direction: row;
+    gap: 5%;
+  }
+  
+  .routes-container {
+    justify-content: space-around;
+  }
+  
+  .Nj-logos-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 0 1rem;
+  }
+  
+  .sec2 {
+    width: 16rem;
+  }
+  
+  .sec3 {
+    width: 24rem;
+  }
+  
+  .find {
+    height: auto;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .find-text h3 {
+    font-size: 2.5rem;
+  }
+  
+  .Nj-logos-container {
+    padding: 0 1rem;
+  }
+  
+  .Nj-logo1 {
+    width: 16rem;
+  }
+  
+  .footer {
+    padding: 40px 30px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.5rem;
+  }
+  
+  .sec1 {
+    width: 100%;
+    height: 3rem;
+  }
+  
+  .sec2 {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .sec3 {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .sec3 a {
+    margin: 0.5rem;
+  }
+  
+  .hero-section {
+    height: auto;
+    padding: 6rem 1rem 2rem;
+  }
+  
+  .hs1 {
+    font-size: 0.9em;
+    height: auto;
+  }
+  
+  .hs2 {
+    height: auto;
+  }
+  
+  .hs3 {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .hiw-steps {
+    gap: 1rem;
+  }
+  
+  .popular-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .view-all-btn {
+    margin-top: 1rem;
+  }
+  
+  .Next-journey {
+    height: auto;
+    padding: 2rem 0;
+  }
+  
+  .Nj1 {
+    height: auto;
+  }
+  
+  .footer-container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    position: static;
+  }
+  
+  .find-input {
+    width: 90%;
+    padding: 1rem;
+  }
+  
+  .route-card {
+    width: 90%;
+  }
+  
+  .hiw-step {
+    min-width: 100%;
+  }
+  
+  .Nj-logos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Nj-logo1 {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  
+  .Nj-heading {
+    font-size: 2rem;
+  }
+  
+  .footer {
+    padding: 30px 20px 15px;
+  }
+  
+  .footer-column {
+    flex: 1 1 100%;
+  }
+}
+
+/* Fix for extremely small devices */
+@media screen and (max-width: 375px) {
+  .sec2 input {
+    width: 70%;
+  }
+  
+  .hs1 {
+    font-size: 0.8em;
+  }
+  
+  .find-text h3 {
+    font-size: 2rem;
+  }
+}

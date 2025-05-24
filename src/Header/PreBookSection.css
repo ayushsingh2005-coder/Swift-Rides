@@ -1,0 +1,361 @@
+/* PreBookSection.css */
+.prebook-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.prebook-main {
+  background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%);
+  border-radius: 24px;
+  padding: 50px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.prebook-main::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.prebook-content {
+  flex: 1;
+  z-index: 2;
+}
+
+.prebook-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.prebook-content p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.prebook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.next-btn {
+  background: #343a40;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.next-btn:hover {
+  background: #23272b;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Visual Section */
+.prebook-visual {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.calendar-bg {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.calendar-page {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 80px;
+  height: 100px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.calendar-header {
+  background: #ff6b6b;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+}
+
+.calendar-dates {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  text-align: center;
+}
+
+.calendar-dates span {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.watch {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.watch-face {
+  width: 100px;
+  height: 100px;
+  background: #2c3e50;
+  border-radius: 50%;
+  position: relative;
+  border: 8px solid #34495e;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.watch-hands {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hour-hand,
+.minute-hand {
+  position: absolute;
+  background: white;
+  border-radius: 2px;
+  transform-origin: bottom center;
+}
+
+.hour-hand {
+  width: 3px;
+  height: 25px;
+  top: -25px;
+  left: -1.5px;
+  transform: rotate(45deg);
+}
+
+.minute-hand {
+  width: 2px;
+  height: 35px;
+  top: -35px;
+  left: -1px;
+  transform: rotate(90deg);
+}
+
+.watch-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: #e74c3c;
+  border-radius: 50%;
+}
+
+.watch-strap {
+  position: absolute;
+  top: -10px;
+  left: 40px;
+  width: 20px;
+  height: 120px;
+  background: #8b4513;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.benefits-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 30px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  background: #f8f9fa;
+  transform: translateX(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.benefit-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 8px;
+}
+
+.benefit-text p {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.terms-link {
+  color: #17a2b8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .prebook-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .prebook-main {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+  
+  .prebook-content h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .prebook-main {
+    padding: 30px 20px;
+  }
+  
+  .prebook-content h1 {
+    font-size: 28px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .benefits-section {
+    padding: 30px 20px;
+  }
+  
+  .calendar-bg {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .watch-face {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prebook-visual {
+    display: none;
+  }
+  
+  .prebook-content h1 {
+    font-size: 24px;
+  }
+  
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
