@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FindRideSection.css';
+import './FIndRideSection.css';
 
 const FindRideSection = ({ bookingData, onBookingUpdate, estimatedFare, onFindRides }) => {
   const [showMap, setShowMap] = useState(false);
